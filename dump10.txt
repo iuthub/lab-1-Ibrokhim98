@@ -1,0 +1,153 @@
+== Info:   Trying 52.87.35.92...
+== Info: TCP_NODELAY set
+== Info: Connected to httpbin.org (52.87.35.92) port 443 (#0)
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 1/3)
+== Info: schannel: checking server certificate revocation
+== Info: schannel: sending initial handshake data: sending 176 bytes...
+== Info: schannel: sent initial handshake data: sent 176 bytes
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: failed to receive handshake, need more data
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 1188
+== Info: schannel: encrypted data buffer: offset 1188 length 4096
+== Info: schannel: encrypted data length: 1096
+== Info: schannel: encrypted data buffer: offset 1096 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 1188
+== Info: schannel: encrypted data buffer: offset 2284 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 634
+== Info: schannel: encrypted data buffer: offset 2918 length 4096
+== Info: schannel: sending next handshake data: sending 126 bytes...
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 51
+== Info: schannel: encrypted data buffer: offset 51 length 4096
+== Info: schannel: SSL/TLS handshake complete
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 3/3)
+== Info: schannel: stored credential handle in session cache
+=> Send header, 210 bytes (0xd2)
+0000: POST /post HTTP/1.1
+0015: Host: httpbin.org
+0028: User-Agent: curl/7.55.1
+0041: Accept: */*
+004e: Content-Length: 1456
+0064: Expect: 100-continue
+007a: Content-Type: multipart/form-data; boundary=--------------------
+00ba: ----86b32e44dbfa815d
+00d0: 
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encdata_buffer resized 103424
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: encrypted data got 54
+== Info: schannel: encrypted data buffer: offset 54 length 103424
+== Info: schannel: decrypted data length: 25
+== Info: schannel: decrypted data added: 25
+== Info: schannel: decrypted data cached: offset 25 length 102400
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: decrypted data buffer: offset 25 length 102400
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 25
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv header, 23 bytes (0x17)
+0000: HTTP/1.1 100 Continue
+=> Send data, 138 bytes (0x8a)
+0000: --------------------------86b32e44dbfa815d
+002c: Content-Disposition: form-data; name="file"; filename="resp.html
+006c: "
+006f: Content-Type: text/html
+0088: 
+=> Send data, 1270 bytes (0x4f6)
+0000: <!doctype html>.<html>.<head>.    <title>Example Domain</title>.
+0040: .    <meta charset="utf-8" />.    <meta http-equiv="Content-type
+0080: " content="text/html; charset=utf-8" />.    <meta name="viewport
+00c0: " content="width=device-width, initial-scale=1" />.    <style ty
+0100: pe="text/css">.    body {.        background-color: #f0f0f2;.   
+0140:      margin: 0;.        padding: 0;.        font-family: "Open S
+0180: ans", "Helvetica Neue", Helvetica, Arial, sans-serif;.        . 
+01c0:    }.    div {.        width: 600px;.        margin: 5em auto;. 
+0200:        padding: 50px;.        background-color: #fff;.        bo
+0240: rder-radius: 1em;.    }.    a:link, a:visited {.        color: #
+0280: 38488f;.        text-decoration: none;.    }.    @media (max-wid
+02c0: th: 700px) {.        body {.            background-color: #fff;.
+0300:         }.        div {.            width: auto;.            mar
+0340: gin: 0 auto;.            border-radius: 0;.            padding: 
+0380: 1em;.        }.    }.    </style>    .</head>..<body>.<div>.    
+03c0: <h1>Example Domain</h1>.    <p>This domain is established to be 
+0400: used for illustrative examples in documents. You may use this.  
+0440:   domain in examples without prior coordination or asking for pe
+0480: rmission.</p>.    <p><a href="http://www.iana.org/domains/exampl
+04c0: e">More information...</a></p>.</div>.</body>.</html>.
+=> Send data, 48 bytes (0x30)
+0000: 
+0002: --------------------------86b32e44dbfa815d--
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: encrypted data got 1188
+== Info: schannel: encrypted data buffer: offset 1188 length 103424
+== Info: schannel: failed to decrypt data, need more data
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encrypted data buffer: offset 1188 length 103424
+== Info: schannel: encrypted data got 881
+== Info: schannel: encrypted data buffer: offset 2069 length 103424
+== Info: schannel: decrypted data length: 2040
+== Info: schannel: decrypted data added: 2040
+== Info: schannel: decrypted data cached: offset 2040 length 102400
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: decrypted data buffer: offset 2040 length 102400
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 2040
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 25 bytes (0x19)
+0000: Server: gunicorn/19.9.0
+<= Recv header, 37 bytes (0x25)
+0000: Date: Sun, 17 Feb 2019 18:59:34 GMT
+<= Recv header, 32 bytes (0x20)
+0000: Content-Type: application/json
+<= Recv header, 22 bytes (0x16)
+0000: Content-Length: 1793
+<= Recv header, 32 bytes (0x20)
+0000: Access-Control-Allow-Origin: *
+<= Recv header, 40 bytes (0x28)
+0000: Access-Control-Allow-Credentials: true
+<= Recv header, 16 bytes (0x10)
+0000: Via: 1.1 vegur
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 1793 bytes (0x701)
+0000: {.  "args": {}, .  "data": "", .  "files": {.    "file": "<!doct
+0040: ype html>\n<html>\n<head>\n    <title>Example Domain</title>\n\n
+0080:     <meta charset=\"utf-8\" />\n    <meta http-equiv=\"Content-t
+00c0: ype\" content=\"text/html; charset=utf-8\" />\n    <meta name=\"
+0100: viewport\" content=\"width=device-width, initial-scale=1\" />\n 
+0140:    <style type=\"text/css\">\n    body {\n        background-col
+0180: or: #f0f0f2;\n        margin: 0;\n        padding: 0;\n        f
+01c0: ont-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial,
+0200:  sans-serif;\n        \n    }\n    div {\n        width: 600px;\
+0240: n        margin: 5em auto;\n        padding: 50px;\n        back
+0280: ground-color: #fff;\n        border-radius: 1em;\n    }\n    a:l
+02c0: ink, a:visited {\n        color: #38488f;\n        text-decorati
+0300: on: none;\n    }\n    @media (max-width: 700px) {\n        body 
+0340: {\n            background-color: #fff;\n        }\n        div {
+0380: \n            width: auto;\n            margin: 0 auto;\n       
+03c0:      border-radius: 0;\n            padding: 1em;\n        }\n  
+0400:   }\n    </style>    \n</head>\n\n<body>\n<div>\n    <h1>Example
+0440:  Domain</h1>\n    <p>This domain is established to be used for i
+0480: llustrative examples in documents. You may use this\n    domain 
+04c0: in examples without prior coordination or asking for permission.
+0500: </p>\n    <p><a href=\"http://www.iana.org/domains/example\">Mor
+0540: e information...</a></p>\n</div>\n</body>\n</html>\n".  }, .  "f
+0580: orm": {}, .  "headers": {.    "Accept": "*/*", .    "Connection"
+05c0: : "close", .    "Content-Length": "1456", .    "Content-Type": "
+0600: multipart/form-data; boundary=------------------------86b32e44db
+0640: fa815d", .    "Expect": "100-continue", .    "Host": "httpbin.or
+0680: g", .    "User-Agent": "curl/7.55.1".  }, .  "json": null, .  "o
+06c0: rigin": "213.230.76.158", .  "url": "https://httpbin.org/post".}
+0700: .
+== Info: Connection #0 to host httpbin.org left intact

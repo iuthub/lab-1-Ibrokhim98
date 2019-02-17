@@ -1,0 +1,473 @@
+== Info:   Trying 31.13.81.36...
+== Info: TCP_NODELAY set
+== Info: Connected to www.facebook.com (31.13.81.36) port 80 (#0)
+=> Send header, 80 bytes (0x50)
+0000: GET / HTTP/1.1
+0010: Host: www.facebook.com
+0028: User-Agent: curl/7.63.0
+0041: Accept: */*
+004e: 
+<= Recv header, 20 bytes (0x14)
+0000: HTTP/1.1 302 Found
+<= Recv header, 37 bytes (0x25)
+0000: Location: https://www.facebook.com/
+<= Recv header, 42 bytes (0x2a)
+0000: Content-Type: text/html; charset="utf-8"
+<= Recv header, 102 bytes (0x66)
+0000: X-FB-Debug: tTl5oPParLCwsCru7ftJUEOw4nmWo9WdruRsQ1MqqS7Tqr6txRIu
+0040: 08ShsK4yAG2FHVaFFDXmKtMrb+sDtbLnsg==
+<= Recv header, 37 bytes (0x25)
+0000: Date: Fri, 01 Feb 2019 12:08:12 GMT
+<= Recv header, 19 bytes (0x13)
+0000: Content-Length: 0
+<= Recv header, 24 bytes (0x18)
+0000: Connection: Keep-Alive
+<= Recv header, 2 bytes (0x2)
+0000: 
+== Info: Connection #0 to host www.facebook.com left intact
+== Info: Issue another request to this URL: 'https://www.facebook.com/'
+== Info:   Trying 31.13.81.36...
+== Info: TCP_NODELAY set
+== Info: Connected to www.facebook.com (31.13.81.36) port 443 (#1)
+== Info: ALPN, offering h2
+== Info: ALPN, offering http/1.1
+== Info: successfully set certificate verify locations:
+== Info:   CAfile: C:\Users\Ibrohim\Downloads\curl-7.63.0-win64-mingw\curl-7.63.0-win64-mingw\bin\curl-ca-bundle.crt
+  CApath: none
+=> Send SSL data, 5 bytes (0x5)
+0000: .....
+== Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+=> Send SSL data, 512 bytes (0x200)
+0000: ........'6...G......M..f.[...BtG8<.oC q.BG<.q....>....p...%....
+0040: ...<....>.......,.0.........+./...$.(.k.#.'.g.....9.....3.....=.
+0080: <.5./.....u.........www.facebook.com........................3t..
+00c0: .......h2.http/1.1.........1.....0..............................
+0100: ...................+............-.....3.&.$... .......}:.K.](..F
+0140: E.t....GMp...!..................................................
+0180: ................................................................
+01c0: ................................................................
+<= Recv SSL data, 5 bytes (0x5)
+0000: ....z
+== Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+<= Recv SSL data, 122 bytes (0x7a)
+0000: ...v...8j[R\k)Dp?................%...< q.BG<.q....>....p...%....
+0040: ...<.........+.....3.$... h0-@[D.;E{.4.#Y'.#...5>%.U. 0.R
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+== Info: TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+<= Recv SSL data, 15 bytes (0xf)
+0000: .............h2
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+== Info: TLSv1.3 (IN), TLS handshake, Certificate (11):
+<= Recv SSL data, 2810 bytes (0xafa)
+0000: ..........30../0...............-a?d......k0...*.H........0p1.0..
+0040: .U....US1.0...U....DigiCert Inc1.0...U....www.digicert.com1/0-..
+0080: U...&DigiCert SHA2 High Assurance Server CA0...190121000000Z..19
+00c0: 0421120000Z0a1.0...U....US1.0...U....CA1.0...U....Menlo Park1.0.
+0100: ..U....Facebook, Inc.1.0...U....*.facebook.com0Y0...*.H.=....*.H
+0140: .=....B...u.0N.1".Z...+.... \..(..da.>..1.F.n:..N.z..$.P..*T4..r
+0180: D.{j.>.......0...0...U.#..0...Qh.....u<..edb...Yr;0...U......{..
+01c0: .jH......B....t.[0....U.....0....*.facebook.com..*.messenger.com
+0200: ..*.facebook.net..messenger.com..*.fbsbx.com..*.xz.fbcdn.net..*.
+0240: fbcdn.net..fb.com..*.fb.com..*.m.facebook.com..facebook.com..*.x
+0280: y.fbcdn.net..*.xx.fbcdn.net0...U...........0...U.%..0...+.......
+02c0: ..+.......0u..U...n0l04.2.0..http://crl3.digicert.com/sha2-ha-se
+0300: rver-g6.crl04.2.0..http://crl4.digicert.com/sha2-ha-server-g6.cr
+0340: l0L..U. .E0C07..`.H...l..0*0(..+.........https://www.digicert.co
+0380: m/CPS0...g.....0....+........w0u0$..+.....0...http://ocsp.digice
+03c0: rt.com0M..+.....0..Ahttp://cacerts.digicert.com/DigiCertSHA2High
+0400: AssuranceServerCA.crt0...U.......0.0.....+.....y............u..K
+0440: ..u.`..Bi....f..~_.r....{.z......hrE.......F0D. y.1...Yl|...8...
+0480: S..>..<f..Pn<.... d..-......4....R...m.!...........v..u..Y|..C._
+04c0: ..n.V.GV6.J.`....^......hrE.......G0E. o:.........w'..+ .j=....;
+0500: ....L...!.....!...2.UE.C4.[..x\..>.I.....V0...*.H...............
+0540: ..;.B.,X:...<yR.9...Q...y8..5..0{...6.. md.y..:.R.x.."z(fj...
+0580: O|J........af..]B....z............p.f..u..r/.....lY...Im.Ry.Fo^.
+05c0: d...b........cI.g...1.t.....w.........#.E.j...u...8gU..q...Y.M..
+0600: .o...@]...,.s.w...C^x.r..q..&.g:.....^@..'....Ec.l..8.. ....W...
+0640: ...0...0...............\..m.+B.]..0...*.H........0l1.0...U....US
+0680: 1.0...U....DigiCert Inc1.0...U....www.digicert.com1+0)..U..."Dig
+06c0: iCert High Assurance EV Root CA0...131022120000Z..281022120000Z0
+0700: p1.0...U....US1.0...U....DigiCert Inc1.0...U....www.digicert.com
+0740: 1/0-..U...&DigiCert SHA2 High Assurance Server CA0.."0...*.H....
+0780: .........0........../.$..m._...d..}"&e..B@.....v.>.0U...O..Z..UV
+07c0: ...*.....@...;r............C:.......@....M._W..Ph...............
+0800: .-..........^DX*7..5...'2Z......Q.'..;B3..(..(...+#.x.{.^q.J>...
+0840: .....#.M.....u.......D5eS%9....c...th.7..RH.9Z...]... .!..&o.J!
+0880: A..m..H/....h.S/^.........I0..E0...U.......0.......0...U........
+08c0: ...0...U.%..0...+.........+.......04..+........(0&0$..+.....0...
+0900: http://ocsp.digicert.com0K..U...D0B0@.>.<.:http://crl4.digicert.
+0940: com/DigiCertHighAssuranceEVRootCA.crl0=..U. .60402..U. .0*0(..+.
+0980: ........https://www.digicert.com/CPS0...U......Qh.....u<..edb...
+09c0: Yr;0...U.#..0....>.i...G...&....cd+.0...*.H...................m.
+0a00: \..h.J...Q/.kD...c..nl.....q.[.4N..y.).-.j.. .y...G.....Yq}...k.
+0a40: YX=..1%\.8.......[.1N.x.....I..'..r.>..A...6...nGI^.H|....I..&B
+0a80: @.....d.WT.....^k......r.V....0..0..N.W..$...+..u..-..}y'......
+0ac0: ...... (AYC(......{;w.@b..AE....>..3.g.a.r..i...W@.p......
+== Info: TLSv1.3 (IN), TLS handshake, CERT verify (15):
+<= Recv SSL data, 80 bytes (0x50)
+0000: ...L...H0F.!...g^X..z.z......V..nx.V..0...k...!....k.......9.x..
+0040: .(:.9....Jm....
+== Info: TLSv1.3 (IN), TLS handshake, Finished (20):
+<= Recv SSL data, 36 bytes (0x24)
+0000: ... ..IP.[...G..rj..[C..m..W.....^.V
+=> Send SSL data, 5 bytes (0x5)
+0000: .....
+== Info: TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+=> Send SSL data, 5 bytes (0x5)
+0000: ....5
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+== Info: TLSv1.3 (OUT), TLS handshake, Finished (20):
+=> Send SSL data, 36 bytes (0x24)
+0000: ... C......g......(...W..r%A+ Y..R..
+== Info: SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
+== Info: ALPN, server accepted to use h2
+== Info: Server certificate:
+== Info:  subject: C=US; ST=CA; L=Menlo Park; O=Facebook, Inc.; CN=*.facebook.com
+== Info:  start date: Jan 21 00:00:00 2019 GMT
+== Info:  expire date: Apr 21 12:00:00 2019 GMT
+== Info:  subjectAltName: host "www.facebook.com" matched cert's "*.facebook.com"
+== Info:  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert SHA2 High Assurance Server CA
+== Info:  SSL certificate verify ok.
+== Info: Using HTTP2, server supports multi-use
+== Info: Connection state changed (HTTP/2 confirmed)
+== Info: Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+=> Send SSL data, 5 bytes (0x5)
+0000: ....)
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+=> Send SSL data, 5 bytes (0x5)
+0000: ....,
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+=> Send SSL data, 5 bytes (0x5)
+0000: .....
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+== Info: Using Stream ID: 1 (easy handle 0x2945f3020a0)
+=> Send SSL data, 5 bytes (0x5)
+0000: ....:
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+=> Send header, 78 bytes (0x4e)
+0000: GET / HTTP/2
+000e: Host: www.facebook.com
+0026: User-Agent: curl/7.63.0
+003f: Accept: */*
+004c: 
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+== Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+<= Recv SSL data, 141 bytes (0x8d)
+0000: ...........d..|...*....P..........<m^..'.E...t......J..F..O.j.1.
+0040: fJ.>.....?.U.G...y...,.;w1m..y.......q..-.t.....y...o.U)..OV<.\3
+0080: p..../.......
+<= Recv SSL data, 5 bytes (0x5)
+0000: ....E
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+== Info: Connection state changed (MAX_CONCURRENT_STREAMS == 100)!
+=> Send SSL data, 5 bytes (0x5)
+0000: .....
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+<= Recv SSL data, 5 bytes (0x5)
+0000: ....'
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv header, 13 bytes (0xd)
+0000: HTTP/2 200 
+<= Recv header, 61 bytes (0x3d)
+0000: cache-control: private, no-cache, no-store, must-revalidate
+<= Recv header, 18 bytes (0x12)
+0000: pragma: no-cache
+<= Recv header, 54 bytes (0x36)
+0000: strict-transport-security: max-age=15552000; preload
+<= Recv header, 23 bytes (0x17)
+0000: vary: Accept-Encoding
+<= Recv header, 33 bytes (0x21)
+0000: x-content-type-options: nosniff
+<= Recv header, 23 bytes (0x17)
+0000: x-frame-options: DENY
+<= Recv header, 21 bytes (0x15)
+0000: x-xss-protection: 0
+<= Recv header, 40 bytes (0x28)
+0000: expires: Sat, 01 Jan 2000 00:00:00 GMT
+<= Recv header, 173 bytes (0xad)
+0000: set-cookie: fr=1Ibt3JoOvRSOPFGnW..BcVDa0.XC.AAA.0.0.BcVDa0.AWWxs
+0040: JbU; expires=Thu, 02-May-2019 12:08:20 GMT; Max-Age=7775999; pat
+0080: h=/; domain=.facebook.com; secure; httponly
+<= Recv header, 146 bytes (0x92)
+0000: set-cookie: sb=tDZUXH1wVao1Eh3oHK3QqaHK; expires=Sun, 31-Jan-202
+0040: 1 12:08:20 GMT; Max-Age=63071999; path=/; domain=.facebook.com; 
+0080: secure; httponly
+<= Recv header, 42 bytes (0x2a)
+0000: content-type: text/html; charset="utf-8"
+<= Recv header, 102 bytes (0x66)
+0000: x-fb-debug: +4TwZHc9Vd1EAkq5L0ZjHeUguzkyIOvhikjdciDXSou3F9DfY0zA
+0040: jw82S0P5cfKvfYi0UQXJekGWO71WAGLObQ==
+<= Recv header, 37 bytes (0x25)
+0000: date: Fri, 01 Feb 2019 12:08:21 GMT
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 967 bytes (0x3c7)
+0000: <!DOCTYPE html>.<html lang="ru" id="facebook" class="no_js">.<he
+0040: ad><meta charset="utf-8" /><meta name="referrer" content="defaul
+0080: t" id="meta_referrer" /><script>window._cstart=+new Date();</scr
+00c0: ipt><script>function envFlush(a){function b(b){for(var c in a)b[
+0100: c]=a[c]}window.requireLazy?window.requireLazy(["Env"],b):(window
+0140: .Env=window.Env||{},b(window.Env))}envFlush({"ajaxpipe_token":"A
+0180: XjdtQB1s02nZC8s","timeslice_heartbeat_config":{"pollIntervalMs":
+01c0: 33,"idleGapThresholdMs":60,"ignoredTimesliceNames":{"requestAnim
+0200: ationFrame":true,"Event listenHandler mousemove":true,"Event lis
+0240: tenHandler mouseover":true,"Event listenHandler mouseout":true,"
+0280: Event listenHandler scroll":true},"isHeartbeatEnabled":true,"isA
+02c0: rtilleryOn":false},"shouldLogCounters":true,"timeslice_categorie
+0300: s":{"react_render":true,"reflow":true},"sample_continuation_stac
+0340: ktraces":true,"dom_mutation_flag":true,"stack_trace_limit":30,"d
+0380: eferred_stack_trace_rate":1000,"timesliceBufferSize":5000,"show_
+03c0: invaria
+<= Recv SSL data, 5 bytes (0x5)
+0000: .... 
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv data, 783 bytes (0x30f)
+0000: nt_decoder":false,"isCQuick":false});</script><style></style><sc
+0040: ript>__DEV__=0;CavalryLogger=window.CavalryLogger||function(a){t
+0080: his.lid=a,this.transition=!1,this.metric_collected=!1,this.is_de
+00c0: tailed_profiler=!1,this.instrumentation_started=!1,this.pagelet_
+0100: metrics={},this.events={},this.ongoing_watch={},this.values={t_c
+0140: start:window._cstart},this.piggy_values={},this.bootloader_metri
+0180: cs={},this.resource_to_pagelet_mapping={},this.initializeInstrum
+01c0: entation&&this.initializeInstrumentation()},CavalryLogger.protot
+0200: ype.setIsDetailedProfiler=function(a){this.is_detailed_profiler=
+0240: a;return this},CavalryLogger.prototype.setTTIEvent=function(a){t
+0280: his.tti_event=a;return this},CavalryLogger.prototype.setValue=fu
+02c0: nction(a,b,c,d){d=d?this.piggy_values:this.values;(typeof d[a]==
+0300: ="undefined"||c
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv data, 1491 bytes (0x5d3)
+0000: )&&(d[a]=b);return this},CavalryLogger.prototype.getLastTtiValue
+0040: =function(){return this.lastTtiValue},CavalryLogger.prototype.se
+0080: tTimeStamp=CavalryLogger.prototype.setTimeStamp||function(a,b,c,
+00c0: d){this.mark(a);var e=this.values.t_cstart||this.values.t_start;
+0100: e=d?e+d:CavalryLogger.now();this.setValue(a,e,b,c);this.tti_even
+0140: t&&a==this.tti_event&&(this.lastTtiValue=e,this.setTimeStamp("t_
+0180: tti",b));return this},CavalryLogger.prototype.mark=typeof consol
+01c0: e==="object"&&console.timeStamp?function(a){console.timeStamp(a)
+0200: }:function(){},CavalryLogger.prototype.addPiggyback=function(a,b
+0240: ){this.piggy_values[a]=b;return this},CavalryLogger.instances={}
+0280: ,CavalryLogger.id=0,CavalryLogger.disableArtilleryOnUntilOffLogg
+02c0: ing=!1,CavalryLogger.getInstance=function(a){typeof a==="undefin
+0300: ed"&&(a=CavalryLogger.id);CavalryLogger.instances[a]||(CavalryLo
+0340: gger.instances[a]=new CavalryLogger(a));return CavalryLogger.ins
+0380: tances[a]},CavalryLogger.setPageID=function(a){if(CavalryLogger.
+03c0: id===0){var b=CavalryLogger.getInstance();CavalryLogger.instance
+0400: s[a]=b;CavalryLogger.instances[a].lid=a;delete CavalryLogger.ins
+0440: tances[0]}CavalryLogger.id=a},CavalryLogger.now=function(){retur
+0480: n window.performance&&performance.timing&&performance.timing.nav
+04c0: igationStart&&performance.now?performance.now()+performance.timi
+0500: ng.navigationStart:new Date().getTime()},CavalryLogger.prototype
+0540: .measureResources=function(){},CavalryLogger.prototype.profileEa
+0580: rlyResources=function(){},CavalryLogger.getBootloaderMetricsFrom
+05c0: AllLoggers=function
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv data, 1500 bytes (0x5dc)
+0000: (){},CavalryLogger.start_js=function(){},CavalryLogger.done_js=f
+0040: unction(){};CavalryLogger.getInstance().setTTIEvent("t_domconten
+0080: t");CavalryLogger.prototype.measureResources=function(a,b){if(!t
+00c0: his.log_resources)return;var c="bootload/"+a.name;if(this.bootlo
+0100: ader_metrics[c]!==void 0||this.ongoing_watch[c]!==void 0)return;
+0140: var d=CavalryLogger.now();this.ongoing_watch[c]=d;"start_"+c in 
+0180: this.bootloader_metrics||(this.bootloader_metrics["start_"+c]=d)
+01c0: ;b&&!("tag_"+c in this.bootloader_metrics)&&(this.bootloader_met
+0200: rics["tag_"+c]=b);if(a.type==="js"){c="js_exec/"+a.name;this.ong
+0240: oing_watch[c]=d}},CavalryLogger.prototype.stopWatch=function(a){
+0280: if(this.ongoing_watch[a]){var b=CavalryLogger.now(),c=b-this.ong
+02c0: oing_watch[a];this.bootloader_metrics[a]=c;var d=this.piggy_valu
+0300: es;a.indexOf("bootload")===0&&(d.t_resource_download||(d.t_resou
+0340: rce_download=0),d.resources_downloaded||(d.resources_downloaded=
+0380: 0),d.t_resource_download+=c,d.resources_downloaded+=1,d["tag_"+a
+03c0: ]=="_EF_"&&(d.t_pagelet_cssload_early_resources=b));delete this.
+0400: ongoing_watch[a]}return this},CavalryLogger.getBootloaderMetrics
+0440: FromAllLoggers=function(){var a={};Object.values(window.CavalryL
+0480: ogger.instances).forEach(function(b){b.bootloader_metrics&&Objec
+04c0: t.assign(a,b.bootloader_metrics)});return a},CavalryLogger.start
+0500: _js=function(a){for(var b=0;b<a.length;++b)CavalryLogger.getInst
+0540: ance().stopWatch("js_exec/"+a[b])},CavalryLogger.done_js=functio
+0580: n(a){for(var b=0;b<a.length;++b)CavalryLogger.getInstance().stop
+05c0: Watch("bootload/"+a[b])},Cav
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv data, 1500 bytes (0x5dc)
+0000: alryLogger.prototype.profileEarlyResources=function(a){for(var b
+0040: =0;b<a.length;b++)this.measureResources({name:a[b][0],type:a[b][
+0080: 1]?"js":""},"_EF_")};CavalryLogger.getInstance().log_resources=t
+00c0: rue;CavalryLogger.getInstance().setIsDetailedProfiler(true);wind
+0100: ow.CavalryLogger&&CavalryLogger.getInstance().setTimeStamp("t_st
+0140: art");</script><noscript><meta http-equiv="refresh" content="0; 
+0180: URL=/?_fb_noscript=1" /></noscript><title id="pageTitle">Faceboo
+01c0: k ... .................. ........ ...... .......................
+0200: ...........</title><meta property="og:site_name" content="Facebo
+0240: ok" /><meta property="og:url" content="https://www.facebook.com/
+0280: " /><meta property="og:image" content="https://www.facebook.com/
+02c0: images/fb_icon_325x325.png" /><meta property="og:locale" content
+0300: ="ru_RU" /><meta property="og:locale:alternate" content="www" />
+0340: <meta property="og:locale:alternate" content="es_LA" /><meta pro
+0380: perty="og:locale:alternate" content="es_ES" /><meta property="og
+03c0: :locale:alternate" content="fr_FR" /><meta property="og:locale:a
+0400: lternate" content="it_IT" /><meta property="og:locale:alternate"
+0440:  content="id_ID" /><meta property="og:locale:alternate" content=
+0480: "th_TH" /><meta property="og:locale:alternate" content="vi_VN" /
+04c0: ><meta property="og:locale:alternate" content="ko_KR" /><meta pr
+0500: operty="og:locale:alternate" content="ja_JP" /><link rel="search
+0540: " type="application/opensearchdescription+xml" href="/osd.xml" t
+0580: itle="Facebook" /><link rel="canonical" href="https://www.facebo
+05c0: ok.com/" /><link rel="altern
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv data, 1500 bytes (0x5dc)
+0000: ate" media="only screen and (max-width: 640px)" href="https://m.
+0040: facebook.com/" /><link rel="alternate" media="handheld" href="ht
+0080: tps://m.facebook.com/" /><link rel="alternate" hreflang="x-defau
+00c0: lt" href="https://www.facebook.com/" /><link rel="alternate" hre
+0100: flang="en" href="https://www.facebook.com/" /><link rel="alterna
+0140: te" hreflang="ar" href="https://ar-ar.facebook.com/" /><link rel
+0180: ="alternate" hreflang="bg" href="https://bg-bg.facebook.com/" />
+01c0: <link rel="alternate" hreflang="bs" href="https://bs-ba.facebook
+0200: .com/" /><link rel="alternate" hreflang="ca" href="https://ca-es
+0240: .facebook.com/" /><link rel="alternate" hreflang="da" href="http
+0280: s://da-dk.facebook.com/" /><link rel="alternate" hreflang="el" h
+02c0: ref="https://el-gr.facebook.com/" /><link rel="alternate" hrefla
+0300: ng="es" href="https://es-la.facebook.com/" /><link rel="alternat
+0340: e" hreflang="es-es" href="https://es-es.facebook.com/" /><link r
+0380: el="alternate" hreflang="fa" href="https://fa-ir.facebook.com/" 
+03c0: /><link rel="alternate" hreflang="fi" href="https://fi-fi.facebo
+0400: ok.com/" /><link rel="alternate" hreflang="fr" href="https://fr-
+0440: fr.facebook.com/" /><link rel="alternate" hreflang="fr-ca" href=
+0480: "https://fr-ca.facebook.com/" /><link rel="alternate" hreflang="
+04c0: hi" href="https://hi-in.facebook.com/" /><link rel="alternate" h
+0500: reflang="hr" href="https://hr-hr.facebook.com/" /><link rel="alt
+0540: ernate" hreflang="id" href="https://id-id.facebook.com/" /><link
+0580:  rel="alternate" hreflang="it" href="https://it-it.facebook.com/
+05c0: " /><link rel="alternate" hr
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv data, 1500 bytes (0x5dc)
+0000: eflang="ko" href="https://ko-kr.facebook.com/" /><link rel="alte
+0040: rnate" hreflang="mk" href="https://mk-mk.facebook.com/" /><link 
+0080: rel="alternate" hreflang="ms" href="https://ms-my.facebook.com/"
+00c0:  /><link rel="alternate" hreflang="pl" href="https://pl-pl.faceb
+0100: ook.com/" /><link rel="alternate" hreflang="pt" href="https://pt
+0140: -br.facebook.com/" /><link rel="alternate" hreflang="pt-pt" href
+0180: ="https://pt-pt.facebook.com/" /><link rel="alternate" hreflang=
+01c0: "ro" href="https://ro-ro.facebook.com/" /><link rel="alternate" 
+0200: hreflang="sl" href="https://sl-si.facebook.com/" /><link rel="al
+0240: ternate" hreflang="sr" href="https://sr-rs.facebook.com/" /><lin
+0280: k rel="alternate" hreflang="th" href="https://th-th.facebook.com
+02c0: /" /><link rel="alternate" hreflang="vi" href="https://vi-vn.fac
+0300: ebook.com/" /><meta name="description" content="&#x421;&#x43e;&#
+0340: x437;&#x434;&#x430;&#x439;&#x442;&#x435; &#x430;&#x43a;&#x43a;&#
+0380: x430;&#x443;&#x43d;&#x442; &#x438;&#x43b;&#x438; &#x432;&#x43e;&
+03c0: #x439;&#x434;&#x438;&#x442;&#x435; &#x43d;&#x430; Facebook. &#x4
+0400: 1e;&#x431;&#x449;&#x430;&#x439;&#x442;&#x435;&#x441;&#x44c; &#x4
+0440: 41; &#x434;&#x440;&#x443;&#x437;&#x44c;&#x44f;&#x43c;&#x438;, &#
+0480: x440;&#x43e;&#x434;&#x441;&#x442;&#x432;&#x435;&#x43d;&#x43d;&#x
+04c0: 438;&#x43a;&#x430;&#x43c;&#x438; &#x438; &#x434;&#x440;&#x443;&#
+0500: x433;&#x438;&#x43c;&#x438; &#x43b;&#x44e;&#x434;&#x44c;&#x43c;&#
+0540: x438;, &#x43a;&#x43e;&#x442;&#x43e;&#x440;&#x44b;&#x445; &#x432;
+0580: &#x44b; &#x437;&#x43d;&#x430;&#x435;&#x442;&#x435;. &#x414;&#x43
+05c0: 5;&#x43b;&#x438;&#x442;&#x43
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv data, 1500 bytes (0x5dc)
+0000: 5;&#x441;&#x44c; &#x444;&#x43e;&#x442;&#x43e; &#x438; &#x432;&#x
+0040: 438;&#x434;&#x435;&#x43e;, &#x43e;&#x442;&#x43f;&#x440;&#x430;&#
+0080: x432;&#x43b;&#x44f;&#x439;&#x442;&#x435;..." /><meta name="robot
+00c0: s" content="noodp,noydir" /><link rel="shortcut icon" href="http
+0100: s://static.xx.fbcdn.net/rsrc.php/yz/r/KFyVIAWzntM.ico" /><link t
+0140: ype="text/css" rel="stylesheet" href="https://static.xx.fbcdn.ne
+0180: t/rsrc.php/v3/yV/l/0,cross/JuPeEBeut9S.css" data-bootloader-hash
+01c0: ="nI4nH" />.<link type="text/css" rel="stylesheet" href="https:/
+0200: /static.xx.fbcdn.net/rsrc.php/v3/yZ/l/0,cross/UzdehS2XXeF.css" d
+0240: ata-bootloader-hash="msSIK" />.<link type="text/css" rel="styles
+0280: heet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yi/l/0,cross
+02c0: /XU_ZkvbGiFa.css" data-bootloader-hash="B85VW" />.<link type="te
+0300: xt/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.
+0340: php/v3/yN/l/0,cross/vSCJLit4_6n.css" data-bootloader-hash="7A/GO
+0380: " />.<link type="text/css" rel="stylesheet" href="https://static
+03c0: .xx.fbcdn.net/rsrc.php/v3/yj/l/0,cross/zffFob-mdix.css" data-boo
+0400: tloader-hash="TtkRi" />.<link type="text/css" rel="stylesheet" h
+0440: ref="https://static.xx.fbcdn.net/rsrc.php/v3/yr/l/0,cross/DLQzeM
+0480: tbC8o.css" data-bootloader-hash="ybliy" />.<link type="text/css"
+04c0:  rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/
+0500: y2/l/0,cross/TsEvh6MwHuf.css" data-bootloader-hash="6eeJn" />.<l
+0540: ink type="text/css" rel="stylesheet" href="https://static.xx.fbc
+0580: dn.net/rsrc.php/v3/yk/l/0,cross/UGKad7TFBJa.css" data-bootloader
+05c0: -hash="JCIAd" />.<script src
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv data, 1500 bytes (0x5dc)
+0000: ="https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/Sm63hEjCl81.js" d
+0040: ata-bootloader-hash="5fui7"></script>.<script>requireLazy(["ix"]
+0080: ,function(ix){ix.add({"86853":{"sprited":true,"spriteCssClass":"
+00c0: sx_5934dd","spriteMapCssClass":"sp_PbNok4JAD2n"},"86857":{"sprit
+0100: ed":true,"spriteCssClass":"sx_5fe112","spriteMapCssClass":"sp_Pb
+0140: Nok4JAD2n"},"86854":{"sprited":true,"spriteCssClass":"sx_3bf10f"
+0180: ,"spriteMapCssClass":"sp_PbNok4JAD2n"},"86852":{"sprited":true,"
+01c0: spriteCssClass":"sx_9c28f2","spriteMapCssClass":"sp_PbNok4JAD2n"
+0200: },"86924":{"sprited":true,"spriteCssClass":"sx_d030bd","spriteMa
+0240: pCssClass":"sp_PbNok4JAD2n"},"86933":{"sprited":true,"spriteCssC
+0280: lass":"sx_b0db9f","spriteMapCssClass":"sp_PbNok4JAD2n"},"141787"
+02c0: :{"sprited":true,"spriteCssClass":"sx_c250e1","spriteMapCssClass
+0300: ":"sp_PbNok4JAD2n"},"496757":{"sprited":true,"spriteCssClass":"s
+0340: x_de0ff4","spriteMapCssClass":"sp_5CZM17Y7nmp"},"503180":{"sprit
+0380: ed":true,"spriteCssClass":"sx_a57bea","spriteMapCssClass":"sp_5C
+03c0: ZM17Y7nmp"},"124209":{"sprited":true,"spriteCssClass":"sx_b277e9
+0400: ","spriteMapCssClass":"sp_N1in2qW6AuK"},"124199":{"sprited":true
+0440: ,"spriteCssClass":"sx_9afe08","spriteMapCssClass":"sp_N1in2qW6Au
+0480: K"},"122194":{"sprited":true,"spriteCssClass":"sx_94bf41","sprit
+04c0: eMapCssClass":"sp_e_sJSkd7GFN"},"499680":{"sprited":true,"sprite
+0500: CssClass":"sx_8922c0","spriteMapCssClass":"sp_N1in2qW6AuK"},"490
+0540: 191":{"sprited":true,"spriteCssClass":"sx_5f9567","spriteMapCssC
+0580: lass":"sp_N1in2qW6AuK"},"499681":{"sprited":true,"spriteCssClass
+05c0: ":"sx_eeacb8","spriteMapCssC
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+== Info: Connection #1 to host www.facebook.com left intact

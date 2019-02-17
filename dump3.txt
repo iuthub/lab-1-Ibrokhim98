@@ -1,0 +1,89 @@
+== Info: Rebuilt URL to: 123'/
+== Info: Could not resolve host: 123'
+== Info: Closing connection 0
+== Info:   Trying 34.226.180.131...
+== Info: TCP_NODELAY set
+== Info: Connected to httpbin.org (34.226.180.131) port 443 (#1)
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 1/3)
+== Info: schannel: checking server certificate revocation
+== Info: schannel: sending initial handshake data: sending 176 bytes...
+== Info: schannel: sent initial handshake data: sent 176 bytes
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: failed to receive handshake, need more data
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 524
+== Info: schannel: encrypted data buffer: offset 524 length 4096
+== Info: schannel: encrypted data length: 432
+== Info: schannel: encrypted data buffer: offset 432 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 524
+== Info: schannel: encrypted data buffer: offset 956 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 524
+== Info: schannel: encrypted data buffer: offset 1480 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 524
+== Info: schannel: encrypted data buffer: offset 2004 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 524
+== Info: schannel: encrypted data buffer: offset 2528 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 390
+== Info: schannel: encrypted data buffer: offset 2918 length 4096
+== Info: schannel: sending next handshake data: sending 126 bytes...
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 51
+== Info: schannel: encrypted data buffer: offset 51 length 4096
+== Info: schannel: SSL/TLS handshake complete
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 3/3)
+== Info: schannel: stored credential handle in session cache
+=> Send header, 78 bytes (0x4e)
+0000: GET /get HTTP/1.1
+0013: Host: httpbin.org
+0026: User-Agent: curl/7.55.1
+003f: Accept: */*
+004c: 
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encdata_buffer resized 103424
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: encrypted data got 491
+== Info: schannel: encrypted data buffer: offset 491 length 103424
+== Info: schannel: decrypted data length: 462
+== Info: schannel: decrypted data added: 462
+== Info: schannel: decrypted data cached: offset 462 length 102400
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: decrypted data buffer: offset 462 length 102400
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 462
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 25 bytes (0x19)
+0000: Server: gunicorn/19.9.0
+<= Recv header, 37 bytes (0x25)
+0000: Date: Sun, 17 Feb 2019 18:25:27 GMT
+<= Recv header, 32 bytes (0x20)
+0000: Content-Type: application/json
+<= Recv header, 21 bytes (0x15)
+0000: Content-Length: 216
+<= Recv header, 32 bytes (0x20)
+0000: Access-Control-Allow-Origin: *
+<= Recv header, 40 bytes (0x28)
+0000: Access-Control-Allow-Credentials: true
+<= Recv header, 16 bytes (0x10)
+0000: Via: 1.1 vegur
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 216 bytes (0xd8)
+0000: {.  "args": {}, .  "headers": {.    "Accept": "*/*", .    "Conne
+0040: ction": "close", .    "Host": "httpbin.org", .    "User-Agent": 
+0080: "curl/7.55.1".  }, .  "origin": "213.230.76.158", .  "url": "htt
+00c0: ps://httpbin.org/get".}.
+== Info: Connection #1 to host httpbin.org left intact

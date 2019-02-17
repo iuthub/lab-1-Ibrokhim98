@@ -1,0 +1,177 @@
+== Info:   Trying 104.24.97.167...
+== Info: TCP_NODELAY set
+== Info: Connected to www.booleanworld.com (104.24.97.167) port 443 (#0)
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 1/3)
+== Info: schannel: checking server certificate revocation
+== Info: schannel: sending initial handshake data: sending 185 bytes...
+== Info: schannel: sent initial handshake data: sent 185 bytes
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 2/3)
+== Info: schannel: failed to receive handshake, need more data
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 2/3)
+== Info: schannel: encrypted data got 1200
+== Info: schannel: encrypted data buffer: offset 1200 length 4096
+== Info: schannel: encrypted data length: 1128
+== Info: schannel: encrypted data buffer: offset 1128 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 2/3)
+== Info: schannel: encrypted data got 2400
+== Info: schannel: encrypted data buffer: offset 3528 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 2/3)
+== Info: schannel: encrypted data got 1024
+== Info: schannel: encrypted data buffer: offset 4552 length 4552
+== Info: schannel: encrypted data length: 239
+== Info: schannel: encrypted data buffer: offset 239 length 4552
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 2/3)
+== Info: schannel: encrypted data got 182
+== Info: schannel: encrypted data buffer: offset 421 length 4552
+== Info: schannel: sending next handshake data: sending 93 bytes...
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 2/3)
+== Info: schannel: encrypted data got 258
+== Info: schannel: encrypted data buffer: offset 258 length 4552
+== Info: schannel: SSL/TLS handshake complete
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 3/3)
+== Info: schannel: stored credential handle in session cache
+=> Send header, 85 bytes (0x55)
+0000: HEAD / HTTP/1.1
+0011: Host: www.booleanworld.com
+002d: User-Agent: curl/7.55.1
+0046: Accept: */*
+0053: 
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encdata_buffer resized 103424
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: encrypted data got 1200
+== Info: schannel: encrypted data buffer: offset 1200 length 103424
+== Info: schannel: failed to decrypt data, need more data
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encrypted data buffer: offset 1200 length 103424
+== Info: schannel: encrypted data got 198
+== Info: schannel: encrypted data buffer: offset 1398 length 103424
+== Info: schannel: decrypted data length: 1369
+== Info: schannel: decrypted data added: 1369
+== Info: schannel: decrypted data cached: offset 1369 length 102400
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: decrypted data buffer: offset 1369 length 102400
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 1369
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 37 bytes (0x25)
+0000: Date: Sun, 17 Feb 2019 19:19:40 GMT
+<= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=UTF-8
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 155 bytes (0x9b)
+0000: Set-Cookie: __cfduid=d6959286ce9ed8ec8bbf73cc90ac71ce01550431179
+0040: ; expires=Mon, 17-Feb-20 19:19:39 GMT; path=/; domain=.booleanwo
+0080: rld.com; HttpOnly; Secure
+<= Recv header, 23 bytes (0x17)
+0000: Vary: Accept-Encoding
+<= Recv header, 23 bytes (0x17)
+0000: Display: pub_site_sol
+<= Recv header, 40 bytes (0x28)
+0000: Expires: Sat, 16 Feb 2019 19:19:40 GMT
+<= Recv header, 73 bytes (0x49)
+0000: Link: <https://www.booleanworld.com/wp-json/>; rel="https://api.
+0040: w.org/"
+<= Recv header, 16 bytes (0x10)
+0000: PageSpeed: off
+<= Recv header, 15 bytes (0xf)
+0000: Response: 200
+<= Recv header, 45 bytes (0x2d)
+0000: Vary: Accept-Encoding,User-Agent,X-APP-JSON
+<= Recv header, 104 bytes (0x68)
+0000: X-Ezoic-Cdn: Hit ds;mm;5095a596f1199f08ba97dd339749c4bf;2-95829-
+0040: 0;1fe57a02-b267-455e-73ff-34cba9c31bac
+<= Recv header, 29 bytes (0x1d)
+0000: X-Frame-Options: sameorigin
+<= Recv header, 35 bytes (0x23)
+0000: X-Middleton-Display: pub_site_sol
+<= Recv header, 27 bytes (0x1b)
+0000: X-Middleton-Response: 200
+<= Recv header, 17 bytes (0x11)
+0000: X-Sol: pub_site
+<= Recv header, 33 bytes (0x21)
+0000: X-Xss-Protection: 1; mode=block
+<= Recv header, 103 bytes (0x67)
+0000: Set-Cookie: ezoadgid_95829=-1; Path=/; Domain=booleanworld.com; 
+0040: Expires=Sun, 17 Feb 2019 19:49:39 UTC
+<= Recv header, 99 bytes (0x63)
+0000: Set-Cookie: ezoref_95829=; Path=/; Domain=booleanworld.com; Expi
+0040: res=Sun, 17 Feb 2019 21:19:39 UTC
+<= Recv header, 102 bytes (0x66)
+0000: Set-Cookie: ezoab_95829=mod1; Path=/; Domain=booleanworld.com; E
+0040: xpires=Sun, 17 Feb 2019 21:19:39 UTC
+<= Recv header, 128 bytes (0x80)
+0000: Set-Cookie: active_template::95829=pub_site.1550431179; Path=/; 
+0040: Domain=booleanworld.com; Expires=Tue, 19 Feb 2019 19:19:39 UTC
+<= Recv header, 100 bytes (0x64)
+0000: Set-Cookie: ezopvc_95829=1; Path=/; Domain=booleanworld.com; Exp
+0040: ires=Sun, 17 Feb 2019 19:49:40 UTC
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: encrypted data got 1096
+== Info: schannel: encrypted data buffer: offset 1096 length 103424
+== Info: schannel: decrypted data length: 1067
+== Info: schannel: decrypted data added: 1067
+== Info: schannel: decrypted data cached: offset 1067 length 102400
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: decrypted data buffer: offset 1067 length 102400
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 1067
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv header, 94 bytes (0x5e)
+0000: Set-Cookie: ezepvv=0; Path=/; Domain=booleanworld.com; Expires=M
+0040: on, 18 Feb 2019 19:19:40 UTC
+<= Recv header, 124 bytes (0x7c)
+0000: Set-Cookie: lp_95829=https://www.booleanworld.com/; Path=/; Doma
+0040: in=booleanworld.com; Expires=Sun, 17 Feb 2019 21:19:40 UTC
+<= Recv header, 109 bytes (0x6d)
+0000: Set-Cookie: ezovid_95829=1130705314; Path=/; Domain=booleanworld
+0040: .com; Expires=Sun, 17 Feb 2019 19:49:40 UTC
+<= Recv header, 115 bytes (0x73)
+0000: Set-Cookie: ezovuuidtime_95829=1550431180; Path=/; Domain=boolea
+0040: nworld.com; Expires=Tue, 19 Feb 2019 19:19:40 UTC
+<= Recv header, 137 bytes (0x89)
+0000: Set-Cookie: ezovuuid_95829=81e91595-39d4-449d-5540-754822e25e1f;
+0040:  Path=/; Domain=booleanworld.com; Expires=Sun, 17 Feb 2019 19:49
+0080: :40 UTC
+<= Recv header, 99 bytes (0x63)
+0000: Set-Cookie: ezCMPCCS=true; Path=/; Domain=booleanworld.com; Expi
+0040: res=Mon, 17 Feb 2020 19:19:40 GMT
+<= Recv header, 22 bytes (0x16)
+0000: X-Varnish: 438549287
+<= Recv header, 32 bytes (0x20)
+0000: Via: 1.1 varnish (Varnish/6.0)
+<= Recv header, 16 bytes (0x10)
+0000: X-VCache: Miss
+<= Recv header, 20 bytes (0x14)
+0000: X-shard: 100224185
+<= Recv header, 22 bytes (0x16)
+0000: X-Varnish: 143047116
+<= Recv header, 8 bytes (0x8)
+0000: Age: 0
+<= Recv header, 32 bytes (0x20)
+0000: Via: 1.1 varnish (Varnish/6.0)
+<= Recv header, 63 bytes (0x3f)
+0000: Cache-Control: max-age=0, must-revalidate, no-cache, no-store
+<= Recv header, 73 bytes (0x49)
+0000: Strict-Transport-Security: max-age=15552000; includeSubDomains; 
+0040: preload
+<= Recv header, 33 bytes (0x21)
+0000: X-Content-Type-Options: nosniff
+<= Recv header, 100 bytes (0x64)
+0000: Expect-CT: max-age=604800, report-uri="https://report-uri.cloudf
+0040: lare.com/cdn-cgi/beacon/expect-ct"
+<= Recv header, 20 bytes (0x14)
+0000: Server: cloudflare
+<= Recv header, 30 bytes (0x1e)
+0000: CF-RAY: 4aaa9b592ebfcada-ARN
+<= Recv header, 2 bytes (0x2)
+0000: 
+== Info: Connection #0 to host www.booleanworld.com left intact
